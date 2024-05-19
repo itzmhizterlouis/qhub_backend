@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.336s</div>
+<div class="counter">0.496s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +82,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.336s</td>
+<td class="success">0.496s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,8 +90,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:46:29.204 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.qhub.qhub_backend.QhubBackendApplicationTests]: QhubBackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:46:29.253 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.qhub.qhub_backend.QhubBackendApplication for test class com.qhub.qhub_backend.QhubBackendApplicationTests
+<pre>18:58:23.115 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.qhub.qhub_backend.QhubBackendApplicationTests]: QhubBackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:58:23.167 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.qhub.qhub_backend.QhubBackendApplication for test class com.qhub.qhub_backend.QhubBackendApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -101,12 +101,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2024-05-15T23:46:29.429+01:00  INFO 81532 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : Starting QhubBackendApplicationTests using Java 21.0.2 with PID 81532 (started by rog in /Users/rog/Documents/qhub_backend)
-2024-05-15T23:46:29.430+01:00  INFO 81532 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-05-15T23:46:29.733+01:00  INFO 81532 --- [qhub_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-05-15T23:46:29.754+01:00  INFO 81532 --- [qhub_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
-2024-05-15T23:46:29.969+01:00  INFO 81532 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-15T23:46:30.990+01:00 ERROR 81532 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2024-05-19T18:58:23.331+01:00  INFO 9992 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : Starting QhubBackendApplicationTests using Java 21.0.2 with PID 9992 (started by rog in /Users/rog/Documents/qhub_backend)
+2024-05-19T18:58:23.332+01:00  INFO 9992 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-05-19T18:58:23.629+01:00  INFO 9992 --- [qhub_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19T18:58:23.651+01:00  INFO 9992 --- [qhub_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2024-05-19T18:58:23.843+01:00  INFO 9992 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T18:58:24.866+01:00 ERROR 9992 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair '${DB_HOST}:${DB_PORT}'.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111) ~[mysql-connector-j-8.3.0.jar:8.3.0]
@@ -278,12 +278,12 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;${DB_PORT}&q
 	at com.mysql.cj.conf.ConnectionUrlParser.parseHostPortPair(ConnectionUrlParser.java:499) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	... 139 common frames omitted
 
-2024-05-15T23:46:31.041+01:00  INFO 81532 --- [qhub_backend] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-05-15T23:46:31.068+01:00  INFO 81532 --- [qhub_backend] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-05-15T23:46:31.083+01:00  INFO 81532 --- [qhub_backend] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-05-15T23:46:31.179+01:00  INFO 81532 --- [qhub_backend] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-05-15T23:46:31.190+01:00  INFO 81532 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-05-15T23:46:32.191+01:00 ERROR 81532 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2024-05-19T18:58:24.910+01:00  INFO 9992 --- [qhub_backend] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19T18:58:24.939+01:00  INFO 9992 --- [qhub_backend] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19T18:58:24.954+01:00  INFO 9992 --- [qhub_backend] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-19T18:58:25.058+01:00  INFO 9992 --- [qhub_backend] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19T18:58:25.071+01:00  INFO 9992 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-19T18:58:26.077+01:00 ERROR 9992 --- [qhub_backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair '${DB_HOST}:${DB_PORT}'.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:111) ~[mysql-connector-j-8.3.0.jar:8.3.0]
@@ -458,7 +458,7 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;${DB_PORT}&q
 	at com.mysql.cj.conf.ConnectionUrlParser.parseHostPortPair(ConnectionUrlParser.java:499) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	... 142 common frames omitted
 
-2024-05-15T23:46:32.200+01:00  WARN 81532 --- [qhub_backend] [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2024-05-19T18:58:26.093+01:00  WARN 9992 --- [qhub_backend] [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.lang.NullPointerException: Cannot invoke &quot;org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)&quot; because the return value of &quot;org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()&quot; is null
 	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
@@ -588,12 +588,12 @@ java.lang.NullPointerException: Cannot invoke &quot;org.hibernate.engine.jdbc.sp
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2024-05-15T23:46:32.217+01:00  WARN 81532 --- [qhub_backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-05-15T23:46:32.218+01:00  WARN 81532 --- [qhub_backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-05-15T23:46:32.539+01:00  INFO 81532 --- [qhub_backend] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-05-15T23:46:32.540+01:00  INFO 81532 --- [qhub_backend] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-05-15T23:46:32.742+01:00  WARN 81532 --- [qhub_backend] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-05-15T23:46:32.966+01:00  INFO 81532 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : Started QhubBackendApplicationTests in 3.641 seconds (process running for 4.3)
+2024-05-19T18:58:26.114+01:00  WARN 9992 --- [qhub_backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19T18:58:26.115+01:00  WARN 9992 --- [qhub_backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-05-19T18:58:26.458+01:00  INFO 9992 --- [qhub_backend] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19T18:58:26.460+01:00  INFO 9992 --- [qhub_backend] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19T18:58:26.693+01:00  WARN 9992 --- [qhub_backend] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19T18:58:27.011+01:00  INFO 9992 --- [qhub_backend] [    Test worker] c.q.q.QhubBackendApplicationTests        : Started QhubBackendApplicationTests in 3.773 seconds (process running for 4.312)
 </pre>
 </span>
 </div>
@@ -615,7 +615,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 15 May 2024, 23:46:33</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 19 May 2024, 18:58:27</p>
 </div>
 </div>
 </body>
