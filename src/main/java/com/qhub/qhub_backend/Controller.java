@@ -3,6 +3,7 @@ package com.qhub.qhub_backend;
 import com.qhub.qhub_backend.models.responses.RandomQuoteResponse;
 import com.qhub.qhub_backend.models.responses.YearPercentageResponse;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/v1/")
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 public class Controller {
 
     private final Service service;
@@ -24,5 +26,11 @@ public class Controller {
     public RandomQuoteResponse getRandomQuote() {
 
         return service.getRandomQuote();
+    }
+
+    @GetMapping("semester-percentage")
+    public SemesterPercentageResponse getSemesterPercentage() {
+
+        return service.getSemesterPercentage();
     }
 }
